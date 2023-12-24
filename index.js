@@ -1,4 +1,6 @@
 const express = require("express");
+//IVxmLmeNHPLh1HPT
+//nishantrajputa11
 const app = express();
 const blogRoutes = require("./routes/Routes");
 const mongose = require("mongoose");
@@ -6,13 +8,12 @@ const mongose = require("mongoose");
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 
-const dburl =
-    "mongodb+srv://nishant:nishant11@nodetutes.3z5ngvc.mongodb.net/node-tuts";
+const dburl = "mongodb+srv://nishantrajputa11:IVxmLmeNHPLh1HPT@node-blog-poster.amamr0b.mongodb.net/node-blogs"
 mongose
     .connect(dburl)
     .then((result) => {
         console.log("connected to db");
-        app.listen(3000);
+        app.listen(4000);
     })
     .catch((err) => console.log(err));
 
