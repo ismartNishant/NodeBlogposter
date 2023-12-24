@@ -8,7 +8,7 @@ const mongose = require("mongoose");
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 
-const dburl = "mongodb+srv://nishantrajputa11:IVxmLmeNHPLh1HPT@node-blog-poster.amamr0b.mongodb.net/node-blogs"
+const dburl = "mongodb+srv://nishantrajputa11:Vq1rqjateNcYsZN6@node-blog-poster.amamr0b.mongodb.net/node-blogs"
 mongose
     .connect(dburl)
     .then((result) => {
